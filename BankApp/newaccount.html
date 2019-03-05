@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to MMS Banking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>MMs Bank</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="newaccount.html">New Account</a></li>
+      <li><a href="withdraw.html">Withdraw</a></li>
+      <li><a href="deposite.html">Deposite</a></li>
+      <li><a href="transfer.html">Fund Transfer</a></li>
+      <li><a href="checkbalance.html">Check Balance</a></li>
+      <li><a href="allaccounts.html">All Account Details</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+        <div class="container">
+                <h4>Fill the form to open<b> New Account</b></h4>
+                <form onsubmit="mypop()">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Enter Name" name="name" required onblur="myfunc()">
+                  </div>
+                  <div>
+                        <label for="account type">Account Type:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio"  id="gender" name="gender" required>Current &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="gender" name="gender" required>Savings
+
+                      </div>
+                  <div class="form-group">  
+                  </br>
+                    <label for="Contact">Contact Number:</label>
+                    <input type="number" class="form-control" id="number" placeholder="Enter Mobile Number" name="contact"  maxlength="10" required>
+                  </div>
+                  <div class="form-group">
+                        <label for="email">E-mail Id:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter mail Id" name="email" required>
+                  </div>
+                  <div class="form-group">
+                        <label for="doj">Date Of Birth:</label>
+                        <input type="date" class="form-control" id="date" placeholder="Enter date of birth" name="date" required>
+                 </div><br>
+                  <div class="form-group">
+                          <label for="gender" >Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="radio"  id="gender" name="gender" required>Male &nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="radio" id="gender" name="gender" required>Female
+                  </div>
+                  <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="city" placeholder="Enter City" name="city" required><br>
+                        <input type="text" class="form-control" id="city" placeholder="Enter State" name="state" required><br>
+                        <input type="number" class="form-control" id="postal" placeholder="Enter PIN-CODE" name="pincode" minlength="6" maxlength="6"required>
+                 </div>
+
+                  
+                  <button type="submit" class="btn btn-primary" >Submit</button>
+              </form>
+       
+    </div>
+
+
+</body>
+
+
+<script>
+  function mypop() {
+    alert("New Account Opened Successful");
+  }
+  </script>
+</html>
